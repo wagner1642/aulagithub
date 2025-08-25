@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleza Afro - Inspirações de Cabelo</title>
+    <style>
+        /* Importação das fontes do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+        /* Definição das variáveis de cor para fácil manutenção */
+        :root {
+            --cor-principal: #8B4513; /* SaddleBrown - Um marrom rico e profundo */
+            --cor-secundaria: #D2B48C; /* Tan - Um tom de pele mais claro, para contraste */
+            --cor-texto: #362419; /* Um marrom bem escuro, quase preto */
+            --cor-fundo: #FDF5E6; /* OldLace - Um fundo suave e quente */
+            --cor-destaque: #CD853F; /* Peru - Um tom terroso vibrante */
+        }
+
+        /* Estilos gerais do corpo da página */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+
+        /* Container principal para centralizar o conteúdo */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilização do cabeçalho */
+        header {
+            background-color: var(--cor-principal);
+            color: var(--cor-fundo);
+            padding: 2.5rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--cor-destaque);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* Estilização do conteúdo principal */
+        main {
+            padding: 2rem 0;
+        }
+
+        .galeria-titulo {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--cor-principal);
+        }
+
+        /* Grid da galeria de imagens */
+        .galeria {
+            display: grid;
+            /* Cria colunas responsivas: elas terão no mínimo 300px e se ajustarão ao espaço */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* Estilo dos cartões de cada penteado */
+        .cartao-cabelo {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Garante que a imagem não ultrapasse as bordas arredondadas */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cartao-cabelo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .cartao-cabelo img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+        }
+
+        .cartao-conteudo {
+            padding: 1.5rem;
+        }
+
+        .cartao-conteudo h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-top: 0;
+            color: var(--cor-principal);
+        }
+
+        .cartao-conteudo p {
+            font-size: 1rem;
+            color: var(--cor-texto);
+        }
+
+        /* Estilização do rodapé */
+        footer {
+            background-color: var(--cor-principal);
+            color: var(--cor-fundo);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Media Queries para responsividade em telas menores */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .galeria-titulo {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Afro Hair</h1>
+            <p>Celebrando a beleza e a diversidade dos cabelos afro</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 class="galeria-titulo">Nossas Inspirações</h2>
+            <div class="galeria">
+                <!-- Cartão 1: Tranças -->
+                <div class="cartao-cabelo">
+                    <img src="https://images.pexels.com/photos/3992870/pexels-photo-3992870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mulher com tranças nagô detalhadas." onerror="this.onerror=null;this.src='https://placehold.co/600x400/8B4513/FDF5E6?text=Tranças';">
+                    <div class="cartao-conteudo">
+                        <h3>Tranças Nagô</h3>
+                        <p>Um estilo clássico e versátil, as tranças nagô são perfeitas para o dia a dia e ocasiões especiais.</p>
+                    </div>
+                </div>
+                <!-- Cartão 2: Corte Masculino -->
+                <div class="cartao-cabelo">
+                    <img src="https://images.pexels.com/photos/2779133/pexels-photo-2779133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Homem com corte de cabelo afro com desenho na lateral." onerror="this.onerror=null;this.src='https://placehold.co/600x400/8B4513/FDF5E6?text=Corte+Masculino';">
+                    <div class="cartao-conteudo">
+                        <h3>Corte com Desenho</h3>
+                        <p>O "fade" com desenhos personalizados é uma forma de expressão artística e estilo único para o homem moderno.</p>
+                    </div>
+                </div>
+                <!-- Cartão 3: Black Power -->
+                <div class="cartao-cabelo">
+                    <img src="https://images.pexels.com/photos/4621616/pexels-photo-4621616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mulher com cabelo black power volumoso e bem cuidado." onerror="this.onerror=null;this.src='https://placehold.co/600x400/8B4513/FDF5E6?text=Black+Power';">
+                    <div class="cartao-conteudo">
+                        <h3>Black Power</h3>
+                        <p>Um símbolo de orgulho e resistência, o black power é um penteado icônico, poderoso e cheio de atitude.</p>
+                    </div>
+                </div>
+                <!-- Cartão 4: Dreadlocks -->
+                <div class="cartao-cabelo">
+                    <img src="https://images.pexels.com/photos/4058223/pexels-photo-4058223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Homem com dreadlocks longos e estilosos." onerror="this.onerror=null;this.src='https://placehold.co/600x400/8B4513/FDF5E6?text=Dreadlocks';">
+                    <div class="cartao-conteudo">
+                        <h3>Dreadlocks</h3>
+                        <p>Com uma rica história cultural, os dreadlocks são mais do que um estilo, são uma verdadeira declaração de identidade.</p>
+                    </div>
+                </div>
+                <!-- Cartão 5: Coque -->
+                <div class="cartao-cabelo">
+                    <img src="https://images.pexels.com/photos/2881792/pexels-photo-2881792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mulher com um coque abacaxi alto e despojado." onerror="this.onerror=null;this.src='https://placehold.co/600x400/8B4513/FDF5E6?text=Coque+Abacaxi';">
+                    <div class="cartao-conteudo">
+                        <h3>Coque Abacaxi</h3>
+                        <p>Um penteado prático e muito estiloso, perfeito para proteger os cachos e manter o volume no topo da cabeça.</p>
+                    </div>
+                </div>
+                <!-- Cartão 6: Curto e Colorido -->
+                <div class="cartao-cabelo">
+                    <img src="https://images.pexels.com/photos/1858098/pexels-photo-1858098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mulher com cabelo afro curto e tingido de loiro." onerror="this.onerror=null;this.src='https://placehold.co/600x400/8B4513/FDF5E6?text=Curto+e+Colorido';">
+                    <div class="cartao-conteudo">
+                        <h3>Curto e Colorido</h3>
+                        <p>Cortes curtos com cores vibrantes demonstram ousadia, atitude e uma personalidade marcante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Afro Hair. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Pequeno script para adicionar um efeito de surgimento suave nos cartões
+        document.addEventListener("DOMContentLoaded", function() {
+            const cartoes = document.querySelectorAll('.cartao-cabelo');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target); // Para a observação após a animação
+                    }
+                });
+            }, { threshold: 0.1 }); // O callback é chamado quando 10% do item está visível
+
+            cartoes.forEach(cartao => {
+                cartao.style.opacity = 0;
+                cartao.style.transform = 'translateY(20px)';
+                cartao.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(cartao);
+            });
+        });
+    </script>
+
+</body>
+</html>
